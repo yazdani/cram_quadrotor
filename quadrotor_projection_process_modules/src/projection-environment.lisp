@@ -34,7 +34,7 @@
   (with-partially-ordered-clock-disabled *projection-clock*
     (call-next-method)))
 
-(define-projection-environment pr2-bullet-projection-environment
+(define-projection-environment quadrotor-bullet-projection-environment
   :special-variable-initializers
   ((*transformer* (make-instance 'cl-tf:transformer))
    ;; TODO: use custom tf topic "tf_sim"
@@ -45,6 +45,6 @@
    (*projection-clock* (make-instance 'partially-ordered-clock))
    (cut:*timestamp-function* #'projection-timestamp-function))
   :process-module-definitions
-  (projection-perception projection-ptu projection-manipulation projection-navigation)
+  (projection-perception projection-ptu projection-navigation)
   :startup (update-tf)
   :shutdown (setf *last-timeline* *current-timeline*))

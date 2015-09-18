@@ -43,16 +43,14 @@
 
   (<- (matching-process-module ?designator projection-perception)
     (desig-prop ?designator (:to :perceive)))
- (<- (matching-process-module ?designator projection-navigation)
-    (desig-prop ?designator (:type :navigation)))
 
   (<- (available-process-module projection-ptu)
-    (symbol-value *projection-environment* pr2-bullet-projection-environment))
+    (symbol-value *projection-environment* quadrotor-bullet-projection-environment))
 
   (<- (available-process-module projection-perception)
-    (symbol-value *projection-environment* pr2-bullet-projection-environment))
+    (symbol-value *projection-environment* quadrotor-bullet-projection-environment))
  (<- (available-process-module projection-navigation)
-    (symbol-value *projection-environment* pr2-bullet-projection-environment))
+    (symbol-value *projection-environment* quadrotor-bullet-projection-environment))
 
   (<- (cram-process-modules:projection-running projection-ptu)
     (available-process-module projection-ptu))
