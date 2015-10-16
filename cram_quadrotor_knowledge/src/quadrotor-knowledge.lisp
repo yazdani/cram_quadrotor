@@ -30,8 +30,8 @@
 
 (def-fact-group quadrotor-metadata (robot camera-frame camera-minimal-height camera-maximal-height)
  (<- (robot quadrotor))
-  (<- (camera-frame quadrotor "iai_wasp_front_cam_optical_frame"))
-  (<- (camera-frame quadrotor "front_cam_optical_frame"))
-  (<- (camera-minimal-height 0.6))
-  (<- (camera-maximal-height 1.0))
-  (<- (robot-pan-links "base_link")))
+  (<- (camera-frame quadrotor01 "camera_depth_optical_frame"))
+  (<- (camera-frame quadrotor01 "camera_rgb_optical_frame"))
+  (<- (camera-minimal-height quadrotor01 1.3))
+  (<- (camera-maximal-height quadrotor01 2.0))
+  (<- (robot-initial-link quadrotor01 "base_link")))
