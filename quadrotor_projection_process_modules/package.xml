@@ -55,8 +55,6 @@
   <build_depend>cram_projection</build_depend>
   <build_depend>cram_quadrotor_designators</build_depend>
   <build_depend>cram_robot_interfaces</build_depend>
-  <build_depend>cram_roslisp_common</build_depend>
-  <build_depend>cram_roslisp_common</build_depend>
   <build_depend>cram_semantic_map</build_depend>
   <build_depend>cram_semantic_map_utils</build_depend>
   <build_depend>cram_transforms_stamped</build_depend>
@@ -75,7 +73,6 @@
   <run_depend>cram_projection</run_depend>
   <run_depend>cram_quadrotor_designators</run_depend>
   <run_depend>cram_robot_interfaces</run_depend>
-  <run_depend>cram_roslisp_common</run_depend>
   <run_depend>cram_semantic_map</run_depend>
   <run_depend>cram_semantic_map_utils</run_depend>
   <run_depend>cram_transforms_stamped</run_depend>
