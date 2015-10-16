@@ -9,7 +9,6 @@ find_package(catkin REQUIRED COMPONENTS
   cram_plan_occasions_events
   cram_prolog
   cram_robot_interfaces
-  cram_roslisp_common
   cram_semantic_map_utils
 )
 

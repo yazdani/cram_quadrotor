@@ -20,8 +20,6 @@ find_package(catkin REQUIRED COMPONENTS
   cram_projection
   cram_quadrotor_designators
   cram_robot_interfaces
-  cram_roslisp_common
-  cram_roslisp_common
   cram_semantic_map
   cram_semantic_map_utils
   cram_transforms_stamped

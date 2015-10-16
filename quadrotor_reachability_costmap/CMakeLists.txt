@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   cram_math
   cram_prolog
   cram_robot_interfaces
-  cram_roslisp_common
+  
   cram_transforms_stamped
   cram_utilities
 )
